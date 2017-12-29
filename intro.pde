@@ -40,7 +40,7 @@ void draw()
   background(0,0,0);
   for (char i = 0; i<s.length(); i++)
     {
-        image(p[i],char(i*width)+ (852 - xi[i]), map(sin(y+offset),-1,1,0,75)%70,width, height);
+        image(p[i],char(i*width)+ (852 - xi[i]), map(sin(y+offset),-1,1,0,75),width, height);
         offset += .13; 
         x += .02;
         xi[i] = x % (852 + (a[i]) +((s.length()-i)*8)-60);
